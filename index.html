@@ -1,216 +1,324 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Hemant Thobbi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hemant Thobbi – Full Stack & AI Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hemant Thobbi – Full Stack & AI engineer building agentic systems, sports analytics tools, and scalable web apps." />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Hemant</strong> <span>Thobbi</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+  <!-- Optional: simple Tailwind config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          // iOS system font stack
+          sans: ['-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<!-- <ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul> -->
-					</nav>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<img src="images/IMG_9577.jpg" width="300" height="300" border-radius="50%" alt="" />
-								<h1>Hi, my name is Hemant</h1>
-							</header>
-							<div class="content">
-								<p>I'm a passionate and creative software developer with a love for solving <br/>
-								complex problems through elegant and efficient code. With 3 years of experience in the field, I've had the privilege of working on a wide range of projects, from building web applications that delight users with seamless experiences to developing robust backend systems that power businesses.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Learn More</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+  :root {
+    --ios-bg: #000000;
+    --ios-secondary-bg: #1c1c1e;
+    --ios-tertiary-bg: #2c2c2e;
+    --ios-border: #3a3a3c;
+    --ios-text: #f2f2f7;
+    --ios-muted: #a1a1aa;
+    --ios-blue: #0a84ff;
+  }
 
-				<!-- Main -->
-					<div id="main">
+  /* Base dark mode look */
+  body.ios-dark {
+    background-color: var(--ios-bg);
+    color: var(--ios-text);
+  }
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="skills.html" class="link">Skills</a></h3>
-										<p>Some of the skills I have picked up from my time in industry.</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="experience.html" class="link">Experience</a></h3>
-										<p>A brief look at the companies that have helped shaped my career so far.</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="projects.html" class="link">Projects</a></h3>
-										<p>Some of the projects I have built in my spare time.</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="interests.html" class="link">Interests</a></h3>
-										<p>Some of the things I enjoy doing outside of work.</p>
-									</header>
-								<!-- </article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article> -->
-							</section>
+  .ios-dark header,
+  .ios-dark main {
+    color: var(--ios-text);
+  }
 
-						<!-- Two -->
-							<!-- <section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section> -->
+  /* Card / section surfaces (Experience, Projects, etc.) */
+  .ios-dark article {
+    background-color: var(--ios-secondary-bg);
+    border-color: var(--ios-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
 
-					</div>
+  /* Section containers if you want a grouped feel */
+  .ios-dark section {
+    scroll-margin-top: 80px;
+  }
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">hemantgthobbi@gmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(408) 859-1749 </span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>
-										Cupertino, CA 95014<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+  /* Links in iOS blue */
+  .ios-dark a {
+    color: var(--ios-blue);
+  }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+  .ios-dark a:hover {
+    text-decoration: underline;
+  }
 
+  /* Muted text helper if you want it */
+  .ios-dark .muted {
+    color: var(--ios-muted);
+  }
+</style>
+
+</head>
+<body class="ios-dark font-sans antialiased">
+  <div class="min-h-screen max-w-3xl mx-auto px-4 py-10 md:py-16">
+    <!-- Intro / Hero -->
+    <header class="mb-10">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+        <img
+          src="images/profile-pic.jpg"
+          alt="Hemant Thobbi profile photo"
+          class="w-24 h-24 rounded-full border border-slate-800 object-cover shadow-lg shrink-0"
+        />
+        <div>
+          <h1 class="text-3xl md:text-4xl font-semibold mb-2">
+            Hemant Thobbi
+          </h1>
+          <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            Full Stack & AI Engineer based in the Bay Area. Experienced with React, Next.js, Python, 
+            and Node.js. I build agentic systems and scalable applications that actually ship to production.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="space-y-10">
+
+      <!-- About -->
+      <section id="about">
+        <h2 class="text-xl font-semibold mb-3">About</h2>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+          I'm a software engineer with a background in computational and applied mathematics (B.S., 
+          San José State University). I’ve built enterprise-level microservices for global supply chain 
+          logistics, REST APIs, and AI-powered internal tools. Recently, I’ve been focused on 
+          building agentic applications, email automation assistants, and sports data visualizations 
+          using modern LLMs and orchestration frameworks.
+        </p>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="experience">
+		<h2 class="text-xl font-semibold mb-3">Work Experience</h2>
+		<div class="space-y-6 text-sm md:text-base">
+	  
+		  <!-- Applied Materials -->
+		  <article class="border border-slate-800 rounded-lg p-4">
+			<div class="flex items-center gap-3 mb-2">
+			  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-xs font-semibold">
+				AM
+			  </div>
+			  <div>
+				<h3 class="font-semibold">Lead Software Engineer — Applied Materials</h3>
+				<p class="text-slate-400 text-xs md:text-sm">04/2024 – Present</p>
+			  </div>
 			</div>
+	  
+			<ul class="list-disc list-inside text-slate-300 space-y-1">
+			  <li>Developed modular, reusable React components using Hooks, Context API, and TypeScript, reducing development time by 3+ hours per project.</li>
+			  <li>Designed and implemented custom dashboards to present business data, improving accessibility and decision-making for stakeholders.</li>
+			  <li>Built an interface for ChatGPT integration, cutting average documentation lookup time by 10 minutes and boosting developer productivity.</li>
+			  <li>Led a team of 5 engineers to modernize legacy applications and build custom component libraries, improving performance and maintainability.</li>
+			  <li>Collaborated with cross-functional teams to gather requirements and deliver tailored business solutions.</li>
+			  <li>Migrated and deployed 8 applications from CRA to Next.js and Vite following the CRA sunset.</li>
+			  <li>Implemented Jest + React Testing Library tests, improving reliability and increasing UI test coverage by 25%.</li>
+			</ul>
+		  </article>
+	  
+		  <!-- General Motors -->
+		  <article class="border border-slate-800 rounded-lg p-4">
+			<div class="flex items-center gap-3 mb-2">
+			  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-xs font-semibold">
+				GM
+			  </div>
+			  <div>
+				<h3 class="font-semibold">Software Engineer — General Motors</h3>
+				<p class="text-slate-400 text-xs md:text-sm">06/2021 – 10/2023</p>
+			  </div>
+			</div>
+	  
+			<ul class="list-disc list-inside text-slate-300 space-y-1">
+			  <li>Rewrote legacy systems and built microservices for supply chain logistics, reducing page load time by 5 minutes in key applications.</li>
+			  <li>Developed and optimized Spring Boot & Python REST APIs, improving integration speed and lowering latency across services.</li>
+			  <li>Migrated over 50 workload automation jobs from bash to Python, reducing on-call incident volume by 25%.</li>
+			  <li>Triaged and fixed software vulnerabilities caused by third-party changes, ensuring production stability and compliance.</li>
+			  <li>Owned two global supply chain applications, managing production, support, and on-call resolution.</li>
+			  <li>Coordinated with vendors and stakeholders to troubleshoot business process issues and implement solutions.</li>
+			</ul>
+		  </article>
+	  
+		  <!-- PayPal -->
+		  <article class="border border-slate-800 rounded-lg p-4">
+			<div class="flex items-center gap-3 mb-2">
+			  <div class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-xs font-semibold">
+				PP
+			  </div>
+			  <div>
+				<h3 class="font-semibold">Software Engineer Intern — PayPal</h3>
+				<p class="text-slate-400 text-xs md:text-sm">Internship</p>
+			  </div>
+			</div>
+	  
+			<ul class="list-disc list-inside text-slate-300 space-y-1">
+			  <li>Built a code sandbox application enabling developers to test releases against production systems, reducing resolution efforts by 5 tickets and implementation time by 1 hour.</li>
+			  <li>Created wire-on/wire-off throttling mechanisms and UI components for an internal shadow testing tool using Spring Boot.</li>
+			  <li>Built a standalone web app with a side-by-side editor and backend integration, enabling developers to send code snippets to server instances for testing.</li>
+			  <li>Integrated a new data pipeline using Apache Kafka to retrieve payload responses, improving internal data processing capabilities.</li>
+			</ul>
+		  </article>
+	  
+		</div>
+	  </section>
+	  
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <!-- Education -->
+      <section id="education">
+        <h2 class="text-xl font-semibold mb-3">Education</h2>
+        <div class="border border-slate-800 rounded-lg p-4 text-sm md:text-base">
+          <h3 class="font-semibold">San José State University</h3>
+          <p class="text-slate-400 text-xs md:text-sm">2015 – 2019</p>
+          <p class="text-slate-300 mt-2">
+            B.S. in Computational & Applied Mathematics.
+          </p>
+        </div>
+      </section>
 
-	</body>
+      <!-- Skills -->
+      <section id="skills">
+        <h2 class="text-xl font-semibold mb-3">Skills</h2>
+        <div class="flex flex-wrap gap-2 text-xs md:text-sm">
+          <!-- FE -->
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">React</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">Next.js</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">TypeScript</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">Tailwind CSS</span>
+          <!-- BE -->
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">Python</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">FastAPI</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">Node.js</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">PostgreSQL</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">MongoDB</span>
+          <!-- Infra -->
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">Docker</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">GitHub Actions</span>
+          <!-- AI -->
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">LLMs</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">RAG</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">CrewAI</span>
+          <span class="px-2 py-1 rounded-full bg-slate-800 text-slate-100">LangChain</span>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2 class="text-xl font-semibold mb-3">My Projects</h2>
+        <p class="text-slate-300 text-sm md:text-base mb-4">
+          I like building practical tools around AI, sports, vehicles, and automation. Some highlights:
+        </p>
+
+        <div class="space-y-5 text-sm md:text-base">
+
+          <!-- Project 1 -->
+          <article class="border border-slate-800 rounded-lg p-4">
+            <h3 class="font-semibold">InboxAI – Email Triage Assistant</h3>
+            <p class="text-slate-400 text-xs md:text-sm mb-2">Local/LLM-powered email workflow assistant</p>
+            <p class="text-slate-300 mb-3">
+              Agentic email assistant that classifies messages, suggests replies, and surfaces the most 
+              important threads using local models and a FastAPI backend.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded-full bg-slate-800">React</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">FastAPI</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">PostgreSQL</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">LLMs</span>
+            </div>
+            <!-- Replace # with your repo or demo -->
+            <a href="#" class="inline-block mt-3 text-xs text-sky-400 hover:underline">
+              View project
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="border border-slate-800 rounded-lg p-4">
+            <h3 class="font-semibold">Live NFL Drive Visualizer</h3>
+            <p class="text-slate-400 text-xs md:text-sm mb-2">Real-time sports analytics & visualization</p>
+            <p class="text-slate-300 mb-3">
+              Visualizes live NFL drives and game flow using WebSockets and a modern React front-end. 
+              Built for exploring in-game momentum and betting edges.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded-full bg-slate-800">React</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">Node.js</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">WebSockets</span>
+            </div>
+            <a href="#" class="inline-block mt-3 text-xs text-sky-400 hover:underline">
+              View project
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="border border-slate-800 rounded-lg p-4">
+            <h3 class="font-semibold">Sports Newsletter Agent</h3>
+            <p class="text-slate-400 text-xs md:text-sm mb-2">Multi-agent weekly sports briefing</p>
+            <p class="text-slate-300 mb-3">
+              CrewAI-powered system that fetches sports news, ranks stories, generates a weekly 
+              newsletter, and produces editorial + EV betting insights.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded-full bg-slate-800">Python</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">CrewAI</span>
+              <span class="px-2 py-1 rounded-full bg-slate-800">Streamlit</span>
+            </div>
+            <a href="#" class="inline-block mt-3 text-xs text-sky-400 hover:underline">
+              View project
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="pb-4">
+        <h2 class="text-xl font-semibold mb-3">Get in Touch</h2>
+        <p class="text-slate-300 text-sm md:text-base mb-2">
+          Want to chat about a project, role, or idea?
+        </p>
+        <p class="text-slate-300 text-sm md:text-base">
+          Best way is to DM me on LinkedIn with a direct question, or send me an email.
+        </p>
+        <div class="mt-3 flex flex-wrap gap-4 text-sm md:text-base">
+          <!-- Replace links with your actual profiles -->
+          <a href="https://x.com" class="text-sky-400 hover:underline" target="_blank" rel="noreferrer">
+            X (Twitter)
+          </a>
+          <a href="https://www.linkedin.com/in/hemant-thobbi/" class="text-sky-400 hover:underline" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href="hemantgthobbi@gmail.com" class="text-sky-400 hover:underline">
+            you@example.com
+          </a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
 </html>
